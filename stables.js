@@ -1,6 +1,6 @@
 // NOTE: UNLESS SPECIFIED, VARIABLE NAMING IS UP TO YOU. THERE SHOULD BE NO HARD-CODED NUMBERS OR STRINGS WHERE VARIBALES WOULD BE PREFERRED.
 let stable = "Happy Barnhouse"
-let welcome = "Wecome to the " + stable + "!";
+let welcome = "Welcome to the " + stable + "!";
 
 let horse1 = {
     name: "Able",
@@ -11,7 +11,6 @@ let horse1 = {
     board: 200,
     inside: true,
     happy: true,
-    hungry: true,
 }
 
 let horse2 = {
@@ -23,7 +22,6 @@ let horse2 = {
     board: 100,
     inside: false,
     happy: true,
-    hungry: false,
 }
 
 let horse3 = {
@@ -35,7 +33,6 @@ let horse3 = {
     board: 200,
     inside: false,
     happy: true,
-    hungry: true,
 }
 
 let horse4 = {
@@ -47,14 +44,18 @@ let horse4 = {
     board: 200,
     inside: true,
     happy: true,
-    hungry: false,
 }
 
-let horses = [horse1, horse2, horse3, horse4];
+horse1.hungry = true;
+horse2.hungry = false;
+horse3.hungry = true;
+horse4.hungry = false;
+
+let horses = [horse1, horse2, horse3];
 let stalls = 10;
 
 function stallNum(num, fill) {
-    console.log("There are " + num - fill + " spaces in the stables.");
+    console.log("There are " + (num - fill) + " spaces in the stables.");
 }
 
 function rentOverdue(horse) {
@@ -65,6 +66,8 @@ function getNickname(horse) {
     return horse.nickname;
 }
 
+horses.push(horse4);
+stallNum(stalls, horses.length);
 rentOverdue(horse1);
 let someNickname = getNickname(horse3);
 console.log(someNickname);
