@@ -1,52 +1,31 @@
 // Welcome!
-//                                                  #    #
-//                                             %%% ##   ##
-//                                          %%%%% ###%🎀###
-//                                         %%%%% ### %%% #
-//                                       %%%%%% ### %%% ###
-//                                        %%%% ## %% #######
-//                                       %%%%% # %% #@#####
-//                                     %%%%%% # % #########
-//                                    %%%%% ##### #########
-//                          ###        %% ####### #########
-//                 %%% ############    ########### ########
-//              %%%% ############################### #######
-//            %%%%% ################################## ######
-//          %%%%%% #################################### #C###
-//         %%%🌸%% #####################################  ###
-//         %%%%% #######################################
-//        %%%%%% ############### BEANS ##################
-//     % %%%%%%% ############### BEANS ##################
-//      %%%%%%%%% ############## BEANS ##################
-//     %%%%%%%%%% ########################################
-//  %%% %%%%%%%%   ###### ################################
-//    %%%%%%%%      ###### #################### ##########
-// % %%%🌸%%%%        ####### ########### ###### ##########
-//  %%%%%%%%%         #######  ########### ###### ########
-// %%%%%%%%%%          ##### ###  ######### ####### ######
-//  %%%%%%%%%%          #### ##               ####### ####
-//  %🌸%%%%%%%%%           ## #                  ##### ###
-//   %%  %% % %%         # ##                      ## ###
-//     %   %    %        # ###                      # ###
-//                        # ###                     ## ###
-//                        # ###                     ## ###
-//                        # ####                   #### ##
-//                       ### ###                  ##### ###
-//                      ####  ###                 ####   ##
-//                     #####   ###                 ##    ##
-//                    #####    ####                      ###
-//                     ##        ###                     ###
-//                                ####                     ##
-//                                 ####                    ###
-//                                                         ####
-//                                                          ##
 //
-// This is a template for your assignments and final project. You'll be setting up a stable and making
-// sure it runs smoothly.
+//                     H O R S E   G A M E
 //
-// Please do not create a new file for each assignment!
-// (Your own comments, where necessary, are acceptable.)
-// NOTE: UNLESS SPECIFIED, VARIABLE NAMING IS UP TO YOU. THERE SHOULD BE NO HARD-CODED NUMBERS OR STRINGS WHERE VARIBALES WOULD BE PREFERRED.
+//                       DON'T LOOK AT
+//                         THIS HORSE
+//
+//                                         /\  /\
+//                                        /  \/  |
+//                                       /       |
+//                                      /  o     |
+//                                     /         |
+//                                    /    __    |
+//                                   (___ /  |   |
+//                                    `--'   |   |
+//                 _________________________/    |
+//              .-'                               \ 
+//             /                                   |
+//            /           GAME OVER                |
+//           |                                     |
+//           |       .-----------------.           /
+//            \      |                  \         /
+//             |     |                   |   |   |
+//             |  |  |                   |   |   |
+//             |  |  |                   |   |   |
+//             |  |  |                   |   |   |
+//             |  |  |                   |   |   |
+//            /___|___\                 /____|___\
 
 let stable = "Happy Barnhouse"
 let welcome = "Welcome to the " + stable + "!";
@@ -163,3 +142,30 @@ console.log(someNickname);
 // Create a function that logs out how much will an individual horse will owe if rent is paid late. Invoke the function.
 
 // Create and invoke a function that returns (not logs) the nickname of a chosen horse. Log out the return value outside of the function.
+
+//------------------------- Day to day operations (Project) -------------------------//
+
+// Add loop that checks to find out if a certain horse likes a particular treat. 
+// If the horse does not like the treat, log out their disatisfaction and check the next horse. 
+// Exit the loop when you find the horse that likes the treat.
+
+// Create a function references one of your unique horse properties. 
+// It should contain a conditional or a loop. 
+// Invoke it for each horse.
+
+// Morning! Create and invoke a function that moves any number horses of your choice outside.
+// It should log out statement indicating the horses have been moved to spend time in the sun. 
+// (The function should be able to move a single horse, or multiple horses, depending on the parameters specified)
+
+// Food! Create and invoke a function that feeds your horses. 
+// If the horse is outside, it should call them in, and then all horses should be fed a treat. 
+// Log the activity of the horses.
+
+// Bedtime! Update the function that lets your horses outside so that it also calls them in if it is getting dark. 
+// Only the horses that moved should log out a message. 
+// Invoke the function.
+
+//------------------------- Bonus -------------------------//
+
+// Replace the ascii art at the top of the file with art representing your stable.
+// Initialize a method on your horses that moves them inside if they are outside, and vice versa.
