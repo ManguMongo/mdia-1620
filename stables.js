@@ -1,83 +1,6 @@
-// NOTE: UNLESS SPECIFIED, VARIABLE NAMING IS UP TO YOU. THERE SHOULD BE NO HARD-CODED NUMBERS OR STRINGS WHERE VARIBALES WOULD BE PREFERRED.
-let stable = "Happy Barnhouse"
-let welcome = "Welcome to the " + stable + "!";
-
-let horse1 = {
-    name: "Able",
-    nickname: "A",
-    snack: "grass",
-    age: 7,
-    height: 168,
-    board: 200,
-    inside: true,
-    happy: true,
-}
-
-let horse2 = {
-    name: "Bean Jr.",
-    nickname: "B",
-    snack: "beans",
-    age: 2,
-    height: 145,
-    board: 100,
-    inside: false,
-    happy: true,
-}
-
-let horse3 = {
-    name: "Candy",
-    nickname: "C",
-    snack: "sugar",
-    age: 12,
-    height: 175,
-    board: 200,
-    inside: false,
-    happy: true,
-}
-
-let horse4 = {
-    name: "Deigo",
-    nickname: "D",
-    snack: "taco",
-    age: 20,
-    height: 162,
-    board: 200,
-    inside: true,
-    happy: true,
-}
-
-horse1.hungry = true;
-horse2.hungry = false;
-horse3.hungry = true;
-horse4.hungry = false;
-
-let horses = [horse1, horse2, horse3];
-let stalls = 10;
-
-function stallNum(num, fill) {
-    console.log("There are " + (num - fill) + " spaces in the stables.");
-}
-
-function rentOverdue(horse) {
-    console.log(horse.name + " will owe " + horse.board * 1.2 + " for renting the stables, including late fees.");
-}
-
-function getNickname(horse) {
-    return horse.nickname;
-}
-
-horses.push(horse4);
-stallNum(stalls, horses.length);
-rentOverdue(horse1);
-let someNickname = getNickname(horse3);
-console.log(someNickname);
-
-
-
 //------------------------- Seting up shop (Assignment 1) -------------------------//
-
-// Welcome!
 //
+// Welcome!
 //                                                  #    #
 //                                             %%% ##   ##
 //                                          %%%%% ###%🎀###
@@ -125,6 +48,81 @@ console.log(someNickname);
 //
 // Please do not create a new file for each assignment!
 // (Your own comments, where necessary, are acceptable.)
+// NOTE: UNLESS SPECIFIED, VARIABLE NAMING IS UP TO YOU. THERE SHOULD BE NO HARD-CODED NUMBERS OR STRINGS WHERE VARIBALES WOULD BE PREFERRED.
+
+let stable = "Happy Barnhouse"
+let welcome = "Welcome to the " + stable + "!";
+
+let horse1 = {
+    name: "Able",
+    nickname: "A",
+    snack: "grass",
+    age: 7,
+    height: 168,
+    board: 200,
+    isInside: true,
+    isHappy: true,
+}
+
+let horse2 = {
+    name: "Bean Jr.",
+    nickname: "B",
+    snack: "beans",
+    age: 2,
+    height: 145,
+    board: 100,
+    isInside: false,
+    isHappy: true,
+}
+
+let horse3 = {
+    name: "Candy",
+    nickname: "C",
+    snack: "sugar",
+    age: 12,
+    height: 175,
+    board: 200,
+    isInside: false,
+    isHappy: true,
+}
+
+let horse4 = {
+    name: "Deigo",
+    nickname: "D",
+    snack: "taco",
+    age: 20,
+    height: 162,
+    board: 200,
+    isInside: true,
+    isHappy: true,
+}
+
+horse1.hungry = true;
+horse2.hungry = false;
+horse3.hungry = true;
+horse4.hungry = false;
+
+let horses = [horse1, horse2, horse3];
+let stalls = 10;
+
+function stallNum(numOfStalls, filledStalls) {
+    console.log("There are " + (numOfStalls - filledStalls) + " spaces in the stables.");
+}
+
+function rentOverdue(horse) {
+    console.log(horse.name + " will owe " + horse.board * 1.2 + " for renting the stables, including late fees.");
+}
+
+function getNickname(horse) {
+    return horse.nickname;
+}
+
+horses.push(horse4);
+stallNum(stalls, horses.length);
+rentOverdue(horse1);
+let someNickname = getNickname(horse3);
+console.log(someNickname);
+
 
 //------------------------- Seting up shop (Assignment 1) -------------------------//
 
