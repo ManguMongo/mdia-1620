@@ -97,10 +97,6 @@ let horse4 = {
     isHappy: true,
 }
 
-horse1.hungry = true;
-horse2.hungry = false;
-horse3.hungry = true;
-horse4.hungry = false;
 
 let horses = [horse1, horse2, horse3];
 let stalls = 10;
@@ -118,8 +114,15 @@ function getNickname(horse) {
 }
 
 horses.push(horse4);
+
 stallNum(stalls, horses.length);
+
+for (const horse of horses) {
+    horse.isHungry = true;
+}
+
 rentOverdue(horse1);
+
 let someNickname = getNickname(horse3);
 console.log(someNickname);
 
