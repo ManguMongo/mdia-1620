@@ -89,9 +89,6 @@ function getNickname(horse) {
     return horse.nickname;
 }
 
-// Create a function references one of your unique horse properties. 
-// It should contain a conditional or a loop. 
-// Invoke it for each horse.
 function happyHorse(horse) {
     if (!horse.isHappy) {
         console.log(`Oh no! ${horse.name} is sad. Find their favourite treat!`);
@@ -100,9 +97,6 @@ function happyHorse(horse) {
     }
 }
 
-// Morning! Create and invoke a function that moves any number horses of your choice outside.
-// It should log out statement indicating the horses have been moved to spend time in the sun. 
-// (The function should be able to move a single horse, or multiple horses, depending on the parameters specified)
 function walkHorses(goingOutside = [], allHorses = [], isDark = false) {
     for (const horse of allHorses) {
         for (const movingHorse of goingOutside) {
@@ -118,13 +112,6 @@ function walkHorses(goingOutside = [], allHorses = [], isDark = false) {
     }
 }
 
-// Bedtime! Update the function that lets your horses outside so that it also calls them in if it is getting dark. 
-// Only the horses that moved should log out a message. 
-// Invoke the function.
-
-// Food! Create and invoke a function that feeds your horses. 
-// If the horse is outside, it should call them in, and then all horses should be fed a treat. 
-// Log the activity of the horses.
 function feedHorses(horses) {
     for (const horse of horses) {
         if (!horse.isInside) {
@@ -149,9 +136,6 @@ rentOverdue(horse1);
 let someNickname = getNickname(horse3);
 console.log(someNickname);
 
-// Add loop that checks to find out if a certain horse likes a particular treat. 
-// If the horse does not like the treat, log out their disatisfaction and check the next horse. 
-// Exit the loop when you find the horse that likes the treat.
 for (const horse of horses) {
     if (horse.snack == "sugar") {
         console.log(`${horse.name} loves ${horse.snack}!`);
