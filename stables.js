@@ -74,10 +74,7 @@ let horse4 = {
     isHappy: true,
 }
 
-let horses = [horse1, horse2, horse3];
-let stalls = 10;
-
-function stallNum(numOfStalls = 10, filledStalls) {
+function remainingStalls(numOfStalls = 10, filledStalls) {
     console.log("There are " + (numOfStalls - filledStalls) + " spaces in the stables.");
 }
 
@@ -123,19 +120,29 @@ function feedHorses(horses) {
     }
 }
 
+//array setup
+let horses = [horse1, horse2, horse3];
+
+//add horse4
 horses.push(horse4);
 
-stallNum(stalls, horses.length);
+//remainingStalls test
+let stalls = 10;
+remainingStalls(stalls, horses.length);
 
+//isHungry loop check
 for (const horse of horses) {
     horse.isHungry = true;
 }
 
+//rentOverdue test
 rentOverdue(horse1);
 
+//someNickname test
 let someNickname = getNickname(horse3);
 console.log(someNickname);
 
+//favourite treat finder loop, curretly: sugar
 for (const horse of horses) {
     if (horse.snack == "sugar") {
         console.log(`${horse.name} loves ${horse.snack}!`);
@@ -145,10 +152,12 @@ for (const horse of horses) {
     }
 }
 
+//happyHorse test
 for (const horse of horses) {
     happyHorse(horse);
 }
 
+//walkHorses test
 walkHorses([horse1, horse2, horse3], horses, true);
 
 
