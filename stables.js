@@ -94,16 +94,13 @@ function happyHorse(horse) {
     }
 }
 
-function walkHorses(goingOutside = [], allHorses = [], isDark = false) {
-    for (const horse of allHorses) {
-        for (const movingHorse of goingOutside) {
-            if (movingHorse == horse) {
-                movingHorse.isInside = false;
-                console.log(`${movingHorse.name} is outside this morning to spend time in the sun!`);                
-            }
-        }
-        if (isDark && !horse.isInside) {
-            horse.isInside = true;
+function walkHorses(goingOutside = [], isDark = false) {
+    for (const movingHorse of goingOutside) {
+        movingHorse.isInside = false;
+        console.log(`${movingHorse.name} is outside this morning to spend time in the sun!`,);
+
+        if (isDark && !movingHorse.isInside) {
+            movingHorse.isInside = true;
             console.log(`It's getting dark, ${horse.name} goes into the stables.`);
         }
     }
