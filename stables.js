@@ -101,7 +101,7 @@ function walkHorses(goingOutside = [], isDark = false) {
 
         if (isDark && !movingHorse.isInside) {
             movingHorse.isInside = true;
-            console.log(`It's getting dark, ${horse.name} goes into the stables.`);
+            console.log(`It's getting dark, ${movingHorse.name} goes into the stables.`);
         }
     }
 }
